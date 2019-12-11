@@ -1,0 +1,34 @@
+# Site settings
+title:            "Nathan Lantieri for City Council"
+description:      ""
+url:              ""
+google_analytics: false
+
+# Where things are
+destination:      ./_site
+
+# Handling Reading
+exclude:          ["Gemfile", "Gemfile.lock", "README.md", ".gitignore"]
+
+# Assets
+sass:
+    style:        compressed
+
+sass:
+    sass_dir: ui/css
+
+# Conversion
+markdown:         kramdown
+
+# Outputting
+permalink:        /:categories/:year/:month/:title/
+
+excerpt_separator: <!--more-->
+
+# Compensating for gh-pages project site
+# https://github.com/jekyll/jekyll/issues/332
+# baseurl:          /clearbold
+baseurl:          ""
+
+plugins:
+  # - jekyll-redirect-from

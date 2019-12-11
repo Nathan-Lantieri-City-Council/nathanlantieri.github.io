@@ -1,0 +1,77 @@
+@mixin accessibility {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
+@mixin reverse-accessibility {
+    clip: none !important;
+    height: auto !important;
+    margin: 0 !important;
+    position: static !important;
+    width :auto !important;
+}
+.accessibility,
+.visually-hidden,
+.hidden {
+    @include accessibility;
+}
+
+// Clearfix
+@mixin cf() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after{
+        clear: both;
+    }
+}
+
+@mixin remify($property, $pixels) {
+    #{$property}: $pixels; #{$property}: ($pixels / $base-font-size) * 1rem;
+}
+
+@mixin font($weightStyle) {
+    @if $weightStyle == 'bold' {
+        font-family: barlow_condensedbold, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+    // } @else if $weightStyle == 'bolditalic' {
+    //     font-family: nunitobolditalic, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    //     font-weight: normal;
+    } @else if $weightStyle == 'semibold' {
+        font-family: barlow_condensedsemibold, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+    } @else if $weightStyle == 'medium' {
+        font-family: barlow_condensedmedium, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+    } @else if $weightStyle == 'italic' {
+        font-family: barlow_condenseditalic, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+    } @else if $weightStyle == 'light' {
+        font-family: barlow_condensedlight, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+    } @else if $weightStyle == 'montserratbold' {
+        font-family: montserratbold, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+    } @else if $weightStyle == 'montserratsemibold' {
+        font-family: montserratsemibold, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+    // } @else if $weightStyle == 'extralight' {
+    //     font-family: nunitoextralight, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    //     font-weight: normal;
+    // } @else if $weightStyle == 'montserrat' {
+    //     font-family: montserratbold, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    //     font-weight: normal;
+    } @else {
+        font-family: barlow_condensedregular, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+    }
+}

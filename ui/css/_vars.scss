@@ -1,0 +1,35 @@
+$base-font-size: 16px;
+
+$breakpoint-min: 768px;
+$breakpoint-max: 767px;
+$breakpoint-mid-min: 600px;
+$breakpoint-mid-max: 599px;
+$breakpoint-nav-min: $breakpoint-min;
+$breakpoint-nav-max: $breakpoint-max;
+
+$page-width: 960px;
+$page-gutter: 20px;
+$page-gutter-x2: 40px;
+
+$gutter: 20px;
+$gutter-minus: -20px;
+$gutter-x2: 40px;
+$gutter-x2-minus: -40px;
+$gutter-x3: 60px;
+$gutter-x3-minus: -60px;
+$gutter-x4: 80px;
+$gutter-quarter: 5px;
+$gutter-half: 10px;
+$gutter-half-minus: -10px;
+$gutter-three-quarters: 15px;
+
+$vert1: 30px;
+$vert2: 40px;
+$vert3: 50px;
+$vert4: 70px;
+$vert5: 100px;
+
+$color-body-bg: rgb(255, 255, 255);
+$color-text: rgb(0,0,0);
+
+$color-red: #a91b0d;

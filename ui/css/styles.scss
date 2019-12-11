@@ -1,0 +1,197 @@
+---
+# empty front matter
+---
+
+@import "fonts";
+@import "vars";
+@import "mixins";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    zoom: 1;
+}
+
+section, main, nav, header, footer, article {
+    display: block;
+}
+
+body {
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    background: $color-body-bg;
+    color: $color-text;
+    @include font('regular');
+    @include remify('font-size', 16px);
+    & > a[href='#main'] {
+        @include accessibility;
+    }
+    position: relative;
+}
+
+b, strong {
+    @include font('bold');
+}
+i, em {
+    @include font('italic');
+}
+
+a {
+    // color: inherit;
+    /*color: $color-link;*/
+    text-decoration: none;
+    transition: .2s all;
+    &:hover {
+        /*color: $color-orange;*/
+    }
+    img {
+        border: 0;
+    }
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.content p:not(:last-child),
+.content ul:not(:last-child),
+.content ol:not(:last-child),
+.content blockquote {
+    margin-bottom: 1em;
+}
+.content p,
+.content li {
+    line-height: 1.5em;
+}
+.content ul,
+.content ol {
+    padding-left: 1em;
+}
+.content li {
+    margin-bottom: .5em;
+}
+
+.s-full-width {
+    width: 100%;
+}
+.s-page-width {
+    margin-right: auto;
+    margin-left: auto;
+    @include remify('max-width', $page-width);
+    width: 100%;
+}
+.wrapper {
+    padding-right: $page-gutter;
+    padding-left: $page-gutter;
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.masthead {
+    background-color: $color-red;
+    color: white;
+    @include remify('padding-top', $gutter-x2);
+    @include remify('padding-bottom', $gutter-x2);
+    text-align: center;
+    width: 100%;
+    a {
+        color: white;
+    }
+    .logo {
+        display: inline-block;
+        transition: .1s all;
+        & > span {
+            display: block;
+            @include font('semibold');
+            @include remify('font-size', 32px);
+            line-height: 1.125em;
+            text-align: center;
+            text-transform: uppercase;
+            &:first-of-type {
+                @include remify('padding-top', 2px);
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(4) {
+                @include font('montserratbold');
+                @include remify('font-size', 14px);
+                position: relative;
+            }
+            &:nth-of-type(2) {
+                & > span {
+                    background-color: $color-red;
+                    display: inline-block;
+                    padding-top: 2px;
+                    padding-right: 4px;
+                    padding-bottom: 2px;
+                    padding-left: 4px;
+                    position: relative;
+                    z-index: 9;
+                }
+                &:before {
+                    background: white;
+                    content: ' ';
+                    display: block;
+                    height: 2px;
+                    position: absolute;
+                    top: calc(50% - 2px);
+                    width: 100%;
+                    z-index: 1;
+                }
+            }
+            &:nth-of-type(4) {
+                border-top: 2px solid white;
+                display: inline-block;
+                margin-top: 4px;
+                padding-top: 10px;
+                padding-right: 4px;
+                padding-left: 4px;
+            }
+        }
+        &:hover {
+            transform: scale(1.125);
+        }
+    }
+}
+
+// .m-hero-home {
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     align-items: center;
+//     display: flex;
+//     flex-direction: row;
+//     @include remify('min-height', 320px);
+//     .text {
+//         display: block;
+//         & > span {
+//             background-color: $color-red;
+//             color: white;
+//             @include font('semibold');
+//             @include remify('font-size', 32px);
+//             line-height: 1em;
+//             @include remify('padding-left', 4px);
+//             text-transform: uppercase;
+//             -webkit-box-decoration-break: clone;
+//             box-decoration-break: clone;
+//             box-shadow: 5px 0px 0px 5px $color-red;
+//             display: inline;
+//         }
+//     }
+//     @media all and (min-width: $breakpoint-mid-min) {
+//         @include remify('min-height', 500px);
+//         .text {
+//             & > span {
+//                 @include remify('font-size', 54px);
+//             }
+//         }
+//     }
+// }
