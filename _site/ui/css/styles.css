@@ -235,8 +235,10 @@ img {
     .masthead {
       height: 80px;
       height: 5rem; }
-      .masthead .logo:hover {
-        transform: scale(1.125); }
+      .masthead .logo {
+        left: 11px; }
+        .masthead .logo:hover {
+          transform: scale(1.125); }
       .masthead nav ul {
         align-items: center;
         display: flex;

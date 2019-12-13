@@ -182,6 +182,7 @@ img {
     @media all and (min-width: $breakpoint-nav-min) {
         @include remify('height', 80px);
         .logo {
+            left: 11px;
             &:hover {
                 transform: scale(1.125);
             }
