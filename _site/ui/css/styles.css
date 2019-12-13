@@ -376,7 +376,9 @@ img {
       flex-basis: 70%;
       max-width: 70%;
       padding-right: 40px;
-      padding-right: 2.5rem; } }
+      padding-right: 2.5rem; }
+  .clipped .m-text-photo .wrapper > div:nth-of-type(1) img {
+    clip-path: polygon(0 1%, 99% 17.1%, 100% 100%, 0 82.9%); } }
 
 footer {
   background-color: #efefef;

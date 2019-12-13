@@ -342,6 +342,13 @@ img {
                 @include remify('padding-right', $gutter-x2);
             }
         }
+        .clipped & .wrapper {
+            & > div:nth-of-type(1) {
+                img {
+                    clip-path: polygon(0 1%, 99% 17.1%, 100% 100%, 0 82.9%);
+                }
+            }
+        }
     }
 }
 
