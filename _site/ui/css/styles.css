@@ -90,8 +90,7 @@ body {
   text-rendering: optimizeLegibility;
   background: white;
   color: black;
-  font-family: barlow_condensedregular, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-weight: normal;
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   font-size: 1rem;
   position: relative; }
@@ -162,61 +161,219 @@ img {
   margin-left: auto; }
 
 .masthead {
-  background-color: #a91b0d;
-  color: white;
-  padding-top: 40px;
-  padding-top: 2.5rem;
-  padding-bottom: 40px;
-  padding-bottom: 2.5rem;
-  text-align: center;
   width: 100%; }
+  .masthead .wrapper {
+    position: relative; }
   .masthead a {
-    color: white; }
+    color: #261f44; }
+    .masthead a:hover {
+      color: #b52897; }
   .masthead .logo {
+    background-color: #261f44;
     display: inline-block;
-    transition: .1s all; }
-    .masthead .logo > span {
-      display: block;
-      font-family: barlow_condensedsemibold, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-      font-weight: normal;
-      font-size: 32px;
-      font-size: 2rem;
-      line-height: 1.125em;
-      text-align: center;
-      text-transform: uppercase; }
-      .masthead .logo > span:first-of-type {
-        padding-top: 2px;
-        padding-top: 0.125rem; }
-      .masthead .logo > span:nth-of-type(2), .masthead .logo > span:nth-of-type(4) {
-        font-family: montserratbold, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-        font-weight: normal;
-        font-size: 14px;
-        font-size: 0.875rem;
-        position: relative; }
-      .masthead .logo > span:nth-of-type(2) > span {
-        background-color: #a91b0d;
-        display: inline-block;
-        padding-top: 2px;
-        padding-right: 4px;
-        padding-bottom: 2px;
-        padding-left: 4px;
-        position: relative;
-        z-index: 9; }
-      .masthead .logo > span:nth-of-type(2):before {
-        background: white;
-        content: ' ';
-        display: block;
-        height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: .1s all;
+    width: 280px;
+    width: 17.5rem;
+    z-index: 8; }
+  .masthead nav {
+    font-family: montserratbold, system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: .1em;
+    text-transform: uppercase; }
+    .masthead nav ul {
+      list-style: none; }
+      .masthead nav ul a {
+        align-items: center;
+        display: flex;
+        justify-content: center; }
+        .masthead nav ul a.button span {
+          background-color: #b52897;
+          display: inline-block;
+          color: white;
+          padding-top: 8px;
+          padding-top: 0.5rem;
+          padding-right: 12px;
+          padding-right: 0.75rem;
+          padding-bottom: 8px;
+          padding-bottom: 0.5rem;
+          padding-left: 12px;
+          padding-left: 0.75rem;
+          transition: .2s all; }
+        .masthead nav ul a.button:hover {
+          background-color: transparent; }
+          .masthead nav ul a.button:hover span {
+            background-color: #261f44; }
+  @media all and (max-width: 767px) {
+    .masthead .wrapper {
+      padding-top: 80px;
+      padding-top: 5rem; }
+    .masthead .logo {
+      width: 100%; }
+      .masthead .logo img {
+        max-width: 280px;
+        max-width: 17.5rem; }
+    .masthead nav {
+      max-height: 0;
+      transition: .2s all; }
+      .masthead nav.open {
+        max-height: 500px;
+        transition: .5s all; }
+      .masthead nav ul {
+        padding-top: 50px;
+        padding-top: 3.125rem;
+        padding-bottom: 20px;
+        padding-bottom: 1.25rem; }
+        .masthead nav ul li:not(:first-of-type) {
+          margin-top: 10px;
+          margin-top: 0.625rem; } }
+  @media all and (min-width: 768px) {
+    .masthead {
+      height: 80px;
+      height: 5rem; }
+      .masthead .logo:hover {
+        transform: scale(1.125); }
+      .masthead nav ul {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
         position: absolute;
-        top: calc(50% - 2px);
-        width: 100%;
-        z-index: 1; }
-      .masthead .logo > span:nth-of-type(4) {
-        border-top: 2px solid white;
-        display: inline-block;
-        margin-top: 4px;
-        padding-top: 10px;
-        padding-right: 4px;
-        padding-left: 4px; }
-    .masthead .logo:hover {
-      transform: scale(1.125); }
+        right: 0; }
+        .masthead nav ul a {
+          height: 80px;
+          height: 5rem;
+          padding-right: 10px;
+          padding-right: 0.625rem;
+          padding-left: 10px;
+          padding-left: 0.625rem; } }
+  .masthead .menu-toggle {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    cursor: hand;
+    font-size: 12px;
+    font-size: .75rem;
+    height: 2.833333333em;
+    line-height: 2.833333333em;
+    position: absolute;
+    right: 5px;
+    top: 13px;
+    -webkit-transition: .05s ease-in-out;
+    -moz-transition: .05s ease-in-out;
+    -o-transition: .05s ease-in-out;
+    transition: .05s ease-in-out;
+    z-index: 9;
+    -webkit-appearance: none; }
+    @media all and (min-width: 768px) {
+      .masthead .menu-toggle {
+        display: none; } }
+    .masthead .menu-toggle .menu-icon {
+      height: 40px;
+      width: 40px; }
+      .masthead .menu-toggle .menu-icon > div {
+        background: white;
+        border-radius: 3px;
+        font-size: 12px;
+        height: 3px;
+        left: 5px;
+        line-height: 3px;
+        position: absolute;
+        width: 30px;
+        -webkit-transition: .1s ease-in-out;
+        -moz-transition: .1s ease-in-out;
+        -o-transition: .1s ease-in-out;
+        transition: .1s ease-in-out; }
+      .masthead .menu-toggle .menu-icon div:nth-of-type(1) {
+        top: 11px; }
+      .masthead .menu-toggle .menu-icon div:nth-of-type(2) {
+        top: 20px; }
+      .masthead .menu-toggle .menu-icon div:nth-of-type(3) {
+        top: 29px; }
+    .masthead .menu-toggle.open div:nth-of-type(1) {
+      color: white; }
+    .masthead .menu-toggle.open .menu-icon div:nth-of-type(1) {
+      top: 20px;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg); }
+    .masthead .menu-toggle.open .menu-icon div:nth-of-type(2) {
+      opacity: 0;
+      right: -30px; }
+    .masthead .menu-toggle.open .menu-icon div:nth-of-type(3) {
+      top: 20px;
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      transform: rotate(-135deg); }
+
+.module {
+  padding-top: 50px;
+  padding-top: 3.125rem;
+  padding-bottom: 50px;
+  padding-bottom: 3.125rem; }
+
+.m-hero {
+  background-position: center center;
+  background-size: cover;
+  min-height: 400px;
+  min-height: 25rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden; }
+  .m-hero .caption {
+    background-image: url("/ui/img/purple-angle.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    bottom: 0;
+    color: white;
+    padding-top: 120px;
+    padding-top: 7.5rem;
+    padding-right: 20px;
+    padding-right: 1.25rem;
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
+    padding-left: 25%;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    width: 100%; }
+  @media all and (min-width: 768px) {
+    .m-hero {
+      min-height: 600px;
+      min-height: 37.5rem; }
+      .m-hero .caption {
+        padding-top: 200px;
+        padding-top: 12.5rem; } }
+
+.m-text-photo div:first-of-type {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
+  .m-text-photo div:first-of-type img {
+    display: block;
+    max-width: 320px;
+    max-width: 20rem;
+    margin-right: auto;
+    margin-left: auto; }
+@media all and (min-width: 768px) {
+  .m-text-photo .wrapper {
+    display: flex;
+    flex-direction: row-reverse; }
+    .m-text-photo .wrapper > div:nth-of-type(1) {
+      flex-basis: 30%;
+      max-width: 30%; }
+    .m-text-photo .wrapper > div:nth-of-type(2) {
+      flex-basis: 70%;
+      max-width: 70%;
+      padding-right: 40px;
+      padding-right: 2.5rem; } }
+
+footer {
+  background-color: #efefef;
+  text-align: center; }

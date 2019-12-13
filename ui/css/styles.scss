@@ -26,7 +26,8 @@ body {
 
     background: $color-body-bg;
     color: $color-text;
-    @include font('regular');
+    // @include font('regular');
+    font-family: system-ui, BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     @include remify('font-size', 16px);
     & > a[href='#main'] {
         @include accessibility;
@@ -97,101 +98,252 @@ img {
 }
 
 .masthead {
-    background-color: $color-red;
-    color: white;
-    @include remify('padding-top', $gutter-x2);
-    @include remify('padding-bottom', $gutter-x2);
-    text-align: center;
+    // text-align: center;
     width: 100%;
+    .wrapper {
+        // @include remify('padding-top', $gutter-x2);
+        // @include remify('padding-bottom', $gutter-x2);
+        position: relative;
+    }
     a {
-        color: white;
+        color: $color-purple;
+        &:hover {
+            color: $color-pink;
+        }
     }
     .logo {
+        background-color: $color-purple;
         display: inline-block;
+        left: 0;
+        position: absolute;
+        top: 0;
         transition: .1s all;
-        & > span {
-            display: block;
-            @include font('semibold');
-            @include remify('font-size', 32px);
-            line-height: 1.125em;
-            text-align: center;
-            text-transform: uppercase;
-            &:first-of-type {
-                @include remify('padding-top', 2px);
-            }
-            &:nth-of-type(2),
-            &:nth-of-type(4) {
-                @include font('montserratbold');
-                @include remify('font-size', 14px);
-                position: relative;
-            }
-            &:nth-of-type(2) {
-                & > span {
-                    background-color: $color-red;
-                    display: inline-block;
-                    padding-top: 2px;
-                    padding-right: 4px;
-                    padding-bottom: 2px;
-                    padding-left: 4px;
-                    position: relative;
-                    z-index: 9;
+        @include remify('width', 280px);
+        z-index: 8;
+    }
+    nav {
+        @include font('montserratbold');
+        @include remify('font-size', 14px);
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        ul {
+            list-style: none;
+            a {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                &.button {
+                    span {
+                        background-color: $color-pink;
+                        display: inline-block;
+                        color: white;
+                        @include remify('padding-top', 8px);
+                        @include remify('padding-right', 12px);
+                        @include remify('padding-bottom', 8px);
+                        @include remify('padding-left', 12px);
+                        transition: .2s all;
+                    }
+                    &:hover {
+                        background-color: transparent;
+                        span {
+                            background-color: $color-purple;
+                        }
+                    }
                 }
-                &:before {
-                    background: white;
-                    content: ' ';
-                    display: block;
-                    height: 2px;
-                    position: absolute;
-                    top: calc(50% - 2px);
-                    width: 100%;
-                    z-index: 1;
-                }
-            }
-            &:nth-of-type(4) {
-                border-top: 2px solid white;
-                display: inline-block;
-                margin-top: 4px;
-                padding-top: 10px;
-                padding-right: 4px;
-                padding-left: 4px;
             }
         }
-        &:hover {
-            transform: scale(1.125);
+    }
+    @media all and (max-width: $breakpoint-nav-max) {
+        .wrapper {
+            @include remify('padding-top', 80px);
+        }
+        .logo {
+            width: 100%;
+            img {
+                @include remify('max-width', 280px);
+            }
+        }
+        nav {
+            max-height: 0;
+            transition: .2s all;
+            &.open {
+                max-height: 500px;
+                transition: .5s all;
+            }
+            ul {
+                @include remify('padding-top', 50px);
+                @include remify('padding-bottom', $gutter);
+                li {
+                    &:not(:first-of-type) {
+                        @include remify('margin-top', $gutter-half);
+                    }
+                }
+            }
+        }
+    }
+    @media all and (min-width: $breakpoint-nav-min) {
+        @include remify('height', 80px);
+        .logo {
+            &:hover {
+                transform: scale(1.125);
+            }
+        }
+        nav {
+            ul {
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                right: 0;
+                a {
+                    @include remify('height', 80px);
+                    @include remify('padding-right', $gutter-half);
+                    @include remify('padding-left', $gutter-half);
+                }
+            }
+        }
+    }
+
+    .menu-toggle {
+        background: transparent;
+        border: 0;
+        // color: $color-blue;
+        cursor: pointer; cursor: hand;
+        font-size: 12px; font-size: .75rem;
+        height: 2.833333333em;
+        line-height: 2.833333333em;
+        position: absolute;
+        right: 5px;
+        top: 13px;
+        -webkit-transition: .05s ease-in-out;
+        -moz-transition: .05s ease-in-out;
+        -o-transition: .05s ease-in-out;
+        transition: .05s ease-in-out;
+        z-index: 9;
+        -webkit-appearance: none;
+        @media all and (min-width: $breakpoint-nav-min) {
+            display: none;
+        }
+        .menu-icon {
+            height: 40px;
+            width: 40px;
+            & > div {
+                background: white;
+                border-radius: 3px;
+                font-size: 12px;
+                height: 3px;
+                left: 5px;
+                line-height: 3px;
+                position: absolute;
+                width: 30px;
+                -webkit-transition: .1s ease-in-out;
+                -moz-transition: .1s ease-in-out;
+                -o-transition: .1s ease-in-out;
+                transition: .1s ease-in-out;
+            }
+            div:nth-of-type(1) {
+                top: 11px;
+            }
+            div:nth-of-type(2) {
+                top: 20px;
+            }
+            div:nth-of-type(3) {
+                top: 29px;
+            }
+        }
+        &.open {
+            div:nth-of-type(1) {
+                color: white;
+            }
+            .menu-icon {
+                div:nth-of-type(1) {
+                    top: 20px;
+                    -webkit-transform: rotate(135deg);
+                    -moz-transform: rotate(135deg);
+                    -o-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                }
+                div:nth-of-type(2) {
+                    opacity: 0;
+                    right: -30px;
+                }
+                div:nth-of-type(3) {
+                    top: 20px;
+                    -webkit-transform: rotate(-135deg);
+                    -moz-transform: rotate(-135deg);
+                    -o-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                }
+            }
         }
     }
 }
 
-// .m-hero-home {
-//     background-position: center center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     align-items: center;
-//     display: flex;
-//     flex-direction: row;
-//     @include remify('min-height', 320px);
-//     .text {
-//         display: block;
-//         & > span {
-//             background-color: $color-red;
-//             color: white;
-//             @include font('semibold');
-//             @include remify('font-size', 32px);
-//             line-height: 1em;
-//             @include remify('padding-left', 4px);
-//             text-transform: uppercase;
-//             -webkit-box-decoration-break: clone;
-//             box-decoration-break: clone;
-//             box-shadow: 5px 0px 0px 5px $color-red;
-//             display: inline;
-//         }
-//     }
-//     @media all and (min-width: $breakpoint-mid-min) {
-//         @include remify('min-height', 500px);
-//         .text {
-//             & > span {
-//                 @include remify('font-size', 54px);
-//             }
-//         }
-//     }
-// }
+.module {
+    @include remify('padding-top', $vert3);
+    @include remify('padding-bottom', $vert3);
+}
+
+.m-hero {
+    background-position: center center;
+    background-size: cover;
+    @include remify('min-height', 400px);
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    .caption {
+        background-image: url('/ui/img/purple-angle.svg');
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        bottom: 0;
+        color: white;
+        @include remify('padding-top', 120px);
+        @include remify('padding-right', $gutter);
+        @include remify('padding-bottom', $gutter);
+        padding-left: 25%;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        width: 100%;
+    }
+    @media all and (min-width: $breakpoint-nav-min) {
+        @include remify('min-height', 600px);
+        .caption {
+            @include remify('padding-top', 200px);
+        }
+    }
+}
+
+.m-text-photo {
+    div:first-of-type {
+        @include remify('margin-bottom', $gutter);
+        img {
+            display: block;
+            @include remify('max-width', 320px);
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    @media all and (min-width: $breakpoint-nav-min) {
+        .wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            & > div:nth-of-type(1) {
+                flex-basis: 30%;
+                max-width: 30%;
+            }
+            & > div:nth-of-type(2) {
+                flex-basis: 70%;
+                max-width: 70%;
+                @include remify('padding-right', $gutter-x2);
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #efefef;
+    text-align: center;
+}
