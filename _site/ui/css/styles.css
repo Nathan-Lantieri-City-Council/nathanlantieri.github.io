@@ -423,6 +423,31 @@ h1, h2 {
         .m-text-photo .image-deco > div > div {
           width: 110%; } }
 
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2em; }
+  .social-icons > a {
+    background-color: #37af70;
+    border-radius: 25%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    height: 3.125rem;
+    width: 50px;
+    width: 3.125rem;
+    margin-left: 10px;
+    margin-left: 0.625rem;
+    margin-right: 10px;
+    margin-right: 0.625rem; }
+    .social-icons > a img {
+      height: 50%;
+      width: auto; }
+    .social-icons > a:hover {
+      background-color: #1d7cb5; }
+
 footer {
   background-color: #efefef;
   text-align: center; }

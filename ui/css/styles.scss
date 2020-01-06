@@ -404,6 +404,31 @@ h1, h2 {
     }
 }
 
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2em;
+    & > a {
+        background-color: $color-green;
+        border-radius: 25%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        @include remify('height', 50px);
+        @include remify('width', 50px);
+        @include remify('margin-left', 10px);
+        @include remify('margin-right', 10px);
+        img {
+            height: 50%;
+            width: auto;
+        }
+        &:hover {
+            background-color: $color-blue;
+        }
+    }
+}
+
 footer {
     background-color: #efefef;
     text-align: center;
