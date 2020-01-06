@@ -114,6 +114,7 @@ i, em {
 
 a {
   /*color: $color-link;*/
+  color: #1d7cb5;
   text-decoration: none;
   transition: .2s all; }
   a:hover {
@@ -124,6 +125,9 @@ a {
 img {
   height: auto;
   width: 100%; }
+
+h1, h2 {
+  color: #261f44; }
 
 .content p:not(:last-child),
 .content ul:not(:last-child),
@@ -371,14 +375,53 @@ img {
       flex-basis: 30%;
       max-width: 30%; }
       .m-text-photo .wrapper > div:nth-of-type(1) img {
-        margin-right: 0; }
+        margin-left: 0; }
     .m-text-photo .wrapper > div:nth-of-type(2) {
       flex-basis: 70%;
       max-width: 70%;
       padding-right: 40px;
       padding-right: 2.5rem; }
   .clipped .m-text-photo .wrapper > div:nth-of-type(1) img {
-    clip-path: polygon(0 1%, 99% 17.1%, 100% 100%, 0 82.9%); } }
+    clip-path: polygon(0 1%, 99% 17.1%, 100% 100%, 0 82.9%); }
+  .m-text-photo .image-deco {
+    position: relative; }
+    .m-text-photo .image-deco img {
+      position: relative;
+      z-index: 9; } }
+    @media all and (min-width: 768px) and (max-width: 979px) {
+      .m-text-photo .image-deco img {
+        width: 90%; } }
+@media all and (min-width: 768px) {
+    .m-text-photo .image-deco > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 82.9%;
+      left: 0;
+      padding-top: 1%;
+      padding-bottom: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+      .m-text-photo .image-deco > div > div {
+        height: 17.1%;
+        width: 100%;
+        z-index: 1; }
+        .m-text-photo .image-deco > div > div:nth-of-type(1) {
+          background-color: #1d7cb5;
+          margin-bottom: 0; }
+        .m-text-photo .image-deco > div > div:nth-of-type(2) {
+          background-color: #37af70;
+          margin-bottom: 0; }
+        .m-text-photo .image-deco > div > div:nth-of-type(3) {
+          background-color: #b52897;
+          margin-bottom: 0; }
+        .m-text-photo .image-deco > div > div:nth-of-type(4) {
+          background-color: #261f44;
+          margin-bottom: 0; } }
+      @media all and (min-width: 768px) and (min-width: 980px) {
+        .m-text-photo .image-deco > div > div {
+          width: 110%; } }
 
 footer {
   background-color: #efefef;
