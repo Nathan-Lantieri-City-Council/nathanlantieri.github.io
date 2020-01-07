@@ -1,34 +1,46 @@
----
-title: Privacy Policy
-layout: master
-class: clipped
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body class="{{ page.class }} post"><a class="skip" href="#main">Skip to content</a>
+    <div class="outer">
+{% include header.html %}
+        <div class="outer-content">
             <main id="main" role="main">
                 <div class="module m-hero">
                     <div class="s-page-width">
                         <div class="wrapper">
                             <div class="caption">
-
                             </div>
                         </div>
                     </div>
                 </div>
                 <style type="text/css">
-                    {% comment %}https://newengland.com/wp-content/uploads/180930-Yankee-402.jpg{% endcomment %}
                     .m-hero {
-                        background-image: url('/ui/img/180930-Yankee-402.jpg');
+                        background-image: url('/ui/img/IMG_4429.jpg');
                     }
                 </style>
                 <div class="module m-text-photo">
                     <div class="s-page-width">
                         <div class="wrapper content">
                             <div>
-                            </div>
-                            <div>
-                                <h1>Privacy Policy</h1>
-                                <p>...</p>
+                                <h1>{{ page.title }}</h1>
+                                <span class="date">{{ page.date | date: "%b %d, %Y" }}</span>
+                                {{ content }}
                             </div>
                         </div>
                     </div>
                 </div>
             </main>
+{% include footer.html %}
+        </div>
+    </div>
+    <script type="text/javascript" src="/ui/js/script.js"></script>
+{% comment %}
+    <script type="text/javascript">
+
+    </script>
+{% endcomment %}
+</body>
+</html>

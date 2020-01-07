@@ -18,7 +18,7 @@ sass:
     sass_dir: ui/css
 
 # Conversion
-markdown:         kramdown
+# markdown:         kramdown
 
 # Outputting
 permalink:        /:categories/:year/:month/:title/

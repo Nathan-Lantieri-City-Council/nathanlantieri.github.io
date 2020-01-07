@@ -3,7 +3,7 @@
 <head>
 {% include head.html %}
 </head>
-<body class="{{ page.class }}"><a class="skip" href="#main">Skip to content</a>
+<body class="{{ page.class }} posts"><a class="skip" href="#main">Skip to content</a>
     <div class="outer">
 {% include header.html %}
         <div class="outer-content">
@@ -26,18 +26,19 @@
                     <div class="s-page-width">
                         <div class="wrapper content">
                             <div>
-                                <div class="image-deco">
-                                    <img src="{{ page.sidebarPhoto }}" alt="" />
-                                    <div><!--
-                                        --><div><!-- decorator --></div><!--
-                                        --><div><!-- decorator --></div><!--
-                                        --><div><!-- decorator --></div><!--
-                                        --><div><!-- decorator --></div><!--
-                                    --></div>
-                                </div>
-                            </div>
-                            <div>
                                 {{ content }}
+                                <div>
+{% for newsPost in site.posts %}
+                                    <article>
+{% if newsPost.link == nil %}
+                                        <h1><a href="{{ newsPost.url }}">{{ newsPost.title }}</a></h1>
+{% else %}
+                                        <h1><a href="{{ newsPost.link }}" target="_blank">{{ newsPost.title }}</a></h1>
+{% endif %}
+                                        <span class="date">{{ newsPost.date | date: "%b %d, %Y" }}</span>
+                                    </article>
+{% endfor %}
+                                </div>
                             </div>
                         </div>
                     </div>
