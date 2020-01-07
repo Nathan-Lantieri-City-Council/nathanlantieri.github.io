@@ -69,11 +69,23 @@ h1, h2, h3 {
 .posts, .post {
     article {
         h1 {
-            margin-bottom: 0;
+            @include remify('margin-bottom', 8px);
         }
         .date {
             display: block;
             @include remify('margin-bottom', 16px);
+        }
+    }
+}
+.posts {
+    article {
+        &:not(:last-of-type) {
+            border-bottom: 1px solid #ebebeb;
+            padding-bottom: 2em;
+            margin-bottom: 2em;
+        }
+        .date {
+            margin-bottom: 0;
         }
     }
 }

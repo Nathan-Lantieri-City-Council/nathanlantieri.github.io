@@ -124,11 +124,19 @@ h1, h2, h3 {
   margin-bottom: 1rem; }
 
 .posts article h1, .post article h1 {
-  margin-bottom: 0; }
+  margin-bottom: 8px;
+  margin-bottom: 0.5rem; }
 .posts article .date, .post article .date {
   display: block;
   margin-bottom: 16px;
   margin-bottom: 1rem; }
+
+.posts article:not(:last-of-type) {
+  border-bottom: 1px solid #ebebeb;
+  padding-bottom: 2em;
+  margin-bottom: 2em; }
+.posts article .date {
+  margin-bottom: 0; }
 
 .content p:not(:last-child),
 .content ul:not(:last-child),
