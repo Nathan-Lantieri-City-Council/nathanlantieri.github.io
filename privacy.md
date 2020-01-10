@@ -11,7 +11,7 @@ Nathan Lantieri for Burlington City Council is committed to protecting your priv
 
 ## Collection of your Personal Information
 
-We collect a variety of personal information about those who register on our site or use other functions or features on the site. Personal information is information that can be directly associated with a specific person or entity such as a name, address, telephone number, e-mail address, or information about activities that are directly linked to that person. You may make changes to the information you have provided by visiting any form throughout the nateforburlington.com site or by contacting us at **EMAIL TBD**.
+We collect a variety of personal information about those who register on our site or use other functions or features on the site. Personal information is information that can be directly associated with a specific person or entity such as a name, address, telephone number, e-mail address, or information about activities that are directly linked to that person. You may make changes to the information you have provided by visiting any form throughout the nateforburlington.com site or by contacting us at natelantieribtv@gmail.com.
 
 In addition to the information that you enter on the site, we automatically receive certain types of information whenever you interact with us online. For example, when you visit our site, our systems may automatically collect your IP address and the type of browser you use. Information may be automatically collected through the use of “cookies” (more information below).
 
