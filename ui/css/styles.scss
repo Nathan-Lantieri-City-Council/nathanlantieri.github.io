@@ -130,6 +130,29 @@ h1, h2, h3 {
     margin-left: auto;
 }
 
+.button {
+    @include font('montserratbold');
+    @include remify('font-size', 14px);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    span {
+        background-color: $color-pink;
+        display: inline-block;
+        color: white;
+        @include remify('padding-top', 8px);
+        @include remify('padding-right', 12px);
+        @include remify('padding-bottom', 8px);
+        @include remify('padding-left', 12px);
+        transition: .2s all;
+    }
+    &:hover {
+        background-color: transparent;
+        span {
+            background-color: $color-purple;
+        }
+    }
+}
+
 .masthead {
     // text-align: center;
     width: 100%;
@@ -361,7 +384,7 @@ h1, h2, h3 {
 .m-text-photo {
     .wrapper div:first-of-type {
         @include remify('margin-bottom', $gutter);
-        img {
+        .image-deco img {
             display: block;
             @include remify('max-width', 320px);
             margin-right: auto;
@@ -388,13 +411,16 @@ h1, h2, h3 {
                 }
             }
             /*.clipped &*/ .wrapper {
-                & > div:nth-of-type(1) {
-                    img {
-                        clip-path: polygon(0 1%, 99% 17.1%, 100% 100%, 0 82.9%);
-                    }
-                }
+                // & > div:nth-of-type(1) {
+                //     img {
+                //         clip-path: polygon(0 1%, 99% 17.1%, 100% 100%, 0 82.9%);
+                //     }
+                // }
             }
             .image-deco {
+                img {
+                    clip-path: polygon(0 1%, 99% 17.1%, 100% 100%, 0 82.9%);
+                }
                 position: relative;
                 img {
                     position: relative;
@@ -444,6 +470,9 @@ h1, h2, h3 {
     }
 }
 
+.contribute {
+    margin-bottom: 2em;
+}
 .social-icons {
     display: flex;
     flex-direction: row;
