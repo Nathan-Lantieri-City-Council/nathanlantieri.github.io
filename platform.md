@@ -12,7 +12,7 @@ Here, **people pursue their passions** through their work, providing unique good
 
 Here, **the environment is cherished**, appreciated, and used responsibly in some of the city’s most beautiful public natural areas. 
 
-Here, **the community works together(()) to come to collective solutions, at large across the South End and on the person-to-person scale in co-working spaces and industrial incubators where innovators support each other as their ideas take off.
+Here, **the community works together** to come to collective solutions, at large across the South End and on the person-to-person scale in co-working spaces and industrial incubators where innovators support each other as their ideas take off.
 
 Here, **we care about our transportation network** and hope that as we move into the future, our roads are accessible, safe, and suited for the green transit of the present and future in all seasons.
 
