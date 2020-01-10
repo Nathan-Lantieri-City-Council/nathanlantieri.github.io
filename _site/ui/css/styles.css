@@ -411,6 +411,8 @@ h1, h2, h3 {
     max-width: 20rem;
     margin-right: auto;
     margin-left: auto; }
+  .m-text-photo .wrapper div:first-of-type .social-icons {
+    display: none; }
 @media all and (min-width: 768px) {
   body:not(.posts):not(.post) .m-text-photo {
     /*.clipped &*/ }
@@ -427,6 +429,9 @@ h1, h2, h3 {
         max-width: 70%;
         padding-right: 40px;
         padding-right: 2.5rem; }
+    body:not(.posts):not(.post) .m-text-photo .social-icons {
+      display: flex;
+      margin-top: 4em; }
     body:not(.posts):not(.post) .m-text-photo .image-deco {
       position: relative; }
       body:not(.posts):not(.post) .m-text-photo .image-deco img {

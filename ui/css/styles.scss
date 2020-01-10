@@ -390,6 +390,9 @@ h1, h2, h3 {
             margin-right: auto;
             margin-left: auto;
         }
+        .social-icons {
+            display: none;
+        }
     }
     @media all and (min-width: $breakpoint-nav-min) {
         body:not(.posts):not(.post) & {
@@ -416,6 +419,10 @@ h1, h2, h3 {
                 //         clip-path: polygon(0 1%, 99% 17.1%, 100% 100%, 0 82.9%);
                 //     }
                 // }
+            }
+            .social-icons {
+                display: flex;
+                margin-top: 4em;
             }
             .image-deco {
                 img {
