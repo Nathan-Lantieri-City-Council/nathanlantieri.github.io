@@ -1,6 +1,6 @@
 ---
 title: News
 layout: news
-hero: '/ui/img/IMG_4429.jpg'
+hero: '/ui/img/IMG_4424.jpg'
 ---
 # News

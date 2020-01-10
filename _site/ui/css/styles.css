@@ -138,6 +138,10 @@ h1, h2, h3 {
 .posts article .date {
   margin-bottom: 0; }
 
+.posts-list {
+  padding-top: 30px;
+  padding-top: 1.875rem; }
+
 .content p:not(:last-child),
 .content ul:not(:last-child),
 .content ol:not(:last-child),
@@ -261,10 +265,16 @@ h1, h2, h3 {
         .masthead nav ul a {
           height: 80px;
           height: 5rem;
-          padding-right: 10px;
-          padding-right: 0.625rem;
-          padding-left: 10px;
-          padding-left: 0.625rem; } }
+          padding-right: 5px;
+          padding-right: 0.3125rem;
+          padding-left: 5px;
+          padding-left: 0.3125rem; } }
+  @media all and (min-width: 900px) {
+    .masthead nav ul a {
+      padding-right: 10px;
+      padding-right: 0.625rem;
+      padding-left: 10px;
+      padding-left: 0.625rem; } }
   .masthead .menu-toggle {
     background: transparent;
     border: 0;

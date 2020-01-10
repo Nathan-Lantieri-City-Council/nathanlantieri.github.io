@@ -89,6 +89,9 @@ h1, h2, h3 {
         }
     }
 }
+.posts-list {
+    @include remify('padding-top', $vert1);
+}
 
 .content p:not(:last-child),
 .content ul:not(:last-child),
@@ -226,6 +229,16 @@ h1, h2, h3 {
                 right: 8px;
                 a {
                     @include remify('height', 80px);
+                    @include remify('padding-right', $gutter-quarter);
+                    @include remify('padding-left', $gutter-quarter);
+                }
+            }
+        }
+    }
+    @media all and (min-width: 900px) {
+        nav {
+            ul {
+                a {
                     @include remify('padding-right', $gutter-half);
                     @include remify('padding-left', $gutter-half);
                 }
