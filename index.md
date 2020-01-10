@@ -2,7 +2,7 @@
 title: Home
 layout: master
 hero: '/ui/img/IMG_4429.jpg'
-caption: "<p>&ldquo;We can realign our city government<br/>with the views of the people.&rdquo;</p>"
+caption: "<p>&ldquo;We can realign our city<br/>government with the views of the people.&rdquo;</p>"
 sidebarPhoto: '/ui/img/photo-nate.jpg'
 ---
 Every day I spend in Burlington, **I’m thankful that I can call this city my home.**
