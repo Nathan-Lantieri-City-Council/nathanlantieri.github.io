@@ -32,3 +32,5 @@ baseurl:          ""
 
 plugins:
   # - jekyll-redirect-from
+
+exclude: vendor
