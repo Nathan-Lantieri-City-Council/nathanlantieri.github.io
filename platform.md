@@ -10,7 +10,7 @@ When I think about the South End, I’m reminded of countless places, people, an
 
 Here, **people pursue their passions** through their work, providing unique goods and services in a way that is only possible in the neighborhood’s unique built environment.
 
-Here, **the environment is cherished**, appreciated, and used responsibly in some of the city’s most beautiful public natural areas. 
+Here, **the environment is cherished**, appreciated, and used responsibly in some of the city’s most beautiful public natural areas.
 
 Here, **the community works together** to come to collective solutions, at large across the South End and on the person-to-person scale in co-working spaces and industrial incubators where innovators support each other as their ideas take off.
 
