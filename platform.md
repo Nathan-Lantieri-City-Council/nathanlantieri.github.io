@@ -33,6 +33,8 @@ As the **City Councilor for Ward 5**, I want to build off this community’s str
 ### Ensuring Transparency and Accessibility in Local Government:
 
 * Push for greater transparency regarding **impacts of public participation** on city **decision-making** processes
+* **Redesign the Champlain Parkway** to reduce environmental and societal impacts of the current design
+* Focus on a participation model that **meets people where they are**
 * Create pathway introduction of **ballot items through direct referendum**
 * Require public vote on sale of large **public assets**
 * **Restore power to NPAs**, increasing funding and decision-making ability
@@ -41,6 +43,7 @@ As the **City Councilor for Ward 5**, I want to build off this community’s str
 
 ### Empowering Workers and Small Business for an Equitable Local Economy:
 
+* Refocus CEDO on building our community from the **bottom-up**
 * **Increase access** to creative and industrial working spaces through **promotion/subsidy of co-working and co-operative models**
 * **Pass $15 city wide minimum wage**, towards future livable wage
 * **Repeal exemptions** made to the livable wage ordinance
@@ -53,10 +56,10 @@ As the **City Councilor for Ward 5**, I want to build off this community’s str
 
 * Bring regularity and accountability to **rental code enforcement**
 * Create policy for the creation of **workforce housing** (<50% AMI)
+* Strengthen **tenants' rights** and representation in city decision making
 * **Strengthen Inclusionary Zoning** requirements to promote economic integration
 * Create **publicly accessible rental property portal**
 * Pursue marginal increase in allowable unit density (max units from 2-3 in low density)
-* Expand Accessory Dwelling Unit (ADU) access on non-owner-occupied lots
 
 ### Taking Tangible Steps to Ensure Ecological Sustainability
 
