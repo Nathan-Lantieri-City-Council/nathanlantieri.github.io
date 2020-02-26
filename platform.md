@@ -6,27 +6,11 @@ sidebarPhoto: '/ui/img/IMG_4409.jpg'
 ---
 # Platform
 
-When I think about the South End, I’m reminded of countless places, people, and times that have been essential in showing me what makes Burlington so amazing.
+Throghout this city, we are seeing the compounding impacts of **growing wealth inequality.** It's become harder to find available affordable housing for rental or for homeownership. The wages available to many working and middle class people is out of sync with those rising housing costs. As these issues grow, so too does the growing feeling that the city government is out of touch with those getting squeezed in the process. This leaves us in a place where countless neighbors are asking the same question: **will Burlington be my home five years from now?** 
 
-Here, **people pursue their passions** through their work, providing unique goods and services in a way that is only possible in the neighborhood’s unique built environment.
-
-Here, **the environment is cherished**, appreciated, and used responsibly in some of the city’s most beautiful public natural areas.
-
-Here, **the community works together** to come to collective solutions, at large across the South End and on the person-to-person scale in co-working spaces and industrial incubators where innovators support each other as their ideas take off.
-
-Here, **we care about our transportation network** and hope that as we move into the future, our roads are accessible, safe, and suited for the green transit of the present and future in all seasons.
-
-Here, **individuals are empowered to grow** and thrive regardless of their background or identity by forward thinking, empathetic community groups and organizations.
+This is a campaign that's fighting for those people, fighting for their right to be heard by our city government. We need to shift towards a people-centric model of governance before the neoliberal perspective today pushes the people and places that make our city spectacular to the curbside.
 
 As the **City Councilor for Ward 5**, I want to build off this community’s strengths, by **listening** to the desires of the people of this community and by living to my personal desire to **create a more just, benevolent future.** The specific angles I will work towards in this campaign and as **your councilor** will be:
-
-* Increasing transparency and accessibility in city government to allow for greater meaningful public participation in all stages of government.
-
-* Creating an equitable local economy by ensuring livable wages and creating greater opportunity for creators, artists, and small businesses, empowering workers to pursue their passions in our city.
-
-* Addressing housing affordability in the city by empowering renters, creating pathways for the creation of workforce housing, and pursuing innovative solutions for increasing density in a way that works for the people of Burlington.
-
-* Combatting climate change by taking tangible steps to address inefficiencies in our roads and in our homes.
 
 ## Issues
 
