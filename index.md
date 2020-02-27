@@ -5,6 +5,8 @@ hero: '/ui/img/IMG_4429.jpg'
 caption: "<p>&ldquo;We can realign our city<br/>government with the views of the people.&rdquo;</p>"
 sidebarPhoto: '/ui/img/photo-nate.jpg'
 ---
+##Livable Wages, Affordable Housing, Accessible and Inclusive City Government.
+
 Every day I spend in Burlington, **I’m thankful that I can call this city my home.**
 
 There’s an **incredible vitality** here that’s unlike so many other places.  **People talk to each other** and care about the present and future of their community.  They spend time outside enjoying the **natural beauty and eclectic economy.** They work to make this place and the whole world a **more just and progressive place** to live, building off of **a history of innovative choices** made for the **betterment of all folks in this community.** They see Burlington the way I do – it’s a place that fosters the kind of **forward-thinking** attitude that can combat the pervasive issues of the day and of the future.
