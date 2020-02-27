@@ -6,9 +6,11 @@ sidebarPhoto: '/ui/img/IMG_4409.jpg'
 ---
 # Platform
 
-Throghout this city, we are seeing the compounding impacts of **growing wealth inequality.** It's become harder to find available affordable housing for rental or for homeownership. The wages available to many working and middle class people is out of sync with those rising housing costs. As these issues grow, so too does the growing feeling that the city government is out of touch with those getting squeezed in the process. This leaves us in a place where countless neighbors are asking the same question: **will Burlington be my home five years from now?** 
+Throughout this city, we are seeing the compounding impacts of **growing wealth inequality.** It's become harder to find available affordable housing for rental or for homeownership. The wages available to many working and middle class people are out of sync with rising housing costs. As these issues grow, so too does the growing feeling that the city government is out of touch with those getting squeezed in the process. Many in our community feel as if their voice has been silenced in the city decision making process, while those with money and access have a direct say in the future of our city.
 
-This is a campaign that's fighting for those people, fighting for their right to be heard by our city government. We need to shift towards a people-centric model of governance before the neoliberal perspective today pushes the people and places that make our city spectacular to the curbside.
+This leaves us in a place where many of our neighbors throughout Ward 5 are asking the same question: **will Burlington be my home five years from now?** This question transcences demographics - I hear it from renters and home owners, young families and 60-years residents, fifth generation Vermonters and New Americans alike.
+
+This is a campaign that's fighting for those people, fighting for their right to be heard by our city government and to be truly represented. We need to shift towards a people-centric model of governance before the neoliberal perspective of our current administration pushes the people and places that make our city spectacular to the curbside.
 
 As the **City Councilor for Ward 5**, I want to build off this community’s strengths, by **listening** to the desires of the people of this community and by living to my personal desire to **create a more just, benevolent future.** The specific angles I will work towards in this campaign and as **your councilor** will be:
 
