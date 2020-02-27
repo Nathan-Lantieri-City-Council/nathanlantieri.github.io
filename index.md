@@ -5,6 +5,7 @@ hero: '/ui/img/IMG_4429.jpg'
 caption: "<p>&ldquo;We can realign our city<br/>government with the views of the people.&rdquo;</p>"
 sidebarPhoto: '/ui/img/photo-nate.jpg'
 ---
+# Why I'm Running
 
 Every day I spend in Burlington, **I’m thankful that I can call this city my home.**
 
@@ -15,3 +16,10 @@ Across the country, we have seen rising economic inequality come from dwindling 
 Burlington can be a city where **everyone** can find an **affordable home**, make a **decent wage** in a **fulfilling job**, and still have the energy to play a **meaningful role** in our community regardless of their **background or identity.** It can be the city that **empowers individuals** to make a difference, leading the way in the pursuit of **environmental, social, and economic sustainability.**
 
 **That’s why I am running for City Council in Ward 5.** We can realign our city government with the views of the people, making sure the council is **always for the people of this city** and for those that will live here in the years to come. Together, we can make innovative decisions and we can tackle the issues of the day.
+
+## My Background
+***The Right Experience. A Fresh Perspective. Fighting for YOU!***
+
+* **Former City Employee** with direct knowledge of city governance and the economic health of Downtown Burlington and its small business community.
+* **Background in Community Development & planning**, specifically community visioning and accessibls strategic communication.
+* **Five Year Renter in Burlington** with first hand knowledge of the rising price of housing in our city and neighborhood.
