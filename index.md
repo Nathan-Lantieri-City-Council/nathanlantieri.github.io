@@ -5,7 +5,6 @@ hero: '/ui/img/IMG_4429.jpg'
 caption: "<p>&ldquo;We can realign our city<br/>government with the views of the people.&rdquo;</p>"
 sidebarPhoto: '/ui/img/photo-nate.jpg'
 ---
-##Livable Wages, Affordable Housing, Accessible and Inclusive City Government.
 
 Every day I spend in Burlington, **I’m thankful that I can call this city my home.**
 
